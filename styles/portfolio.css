@@ -1,10 +1,9 @@
 :root {
-    --base-color: #fafac6;
-    --dark-color: #28231C;
-    --primary-color: #5171a5;
-    --secondary-color: #EB5160;
-    --tertiary-color: #0C8346;
-
+  --base-color: #fafac6;
+  --dark-color: #28231c;
+  --primary-color: #5171a5;
+  --secondary-color: #eb5160;
+  --tertiary-color: #0c8346;
 }
 
 body {
@@ -12,14 +11,21 @@ body {
   background: var(--base-color);
 }
 h1 {
-  font-size: 72px;
+  font-size: 96px;
   font-weight: bold;
+  line-height: 1.5;
 }
 
-h2,
+h2 {
+  font-size: 64px;
+}
 h3 {
   font-size: 24px;
   font-weight: bold;
+}
+
+p {
+  line-height: 30px;
 }
 .hero {
   margin-top: 20px;
@@ -33,4 +39,36 @@ h3 {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+}
+
+.btn-branding-outline {
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  background-color: var(--base-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+}
+
+.project-description {
+  padding: 120px 60px;
+}
+
+@media (max-width: 992px) {
+  h1 {
+    font-size: 44px;
+    line-height: 1.5;
+  }
+  h2 {
+    font-size: 44px;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .project-description {
+    padding: 10px;
+    text-align: center;
+  }
 }
