@@ -18,6 +18,9 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="/styles/portfolio.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,12 +31,38 @@
     <title>About me - Charlotte Pringle</title>
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+    <div class="container">
+      <a class="logo" href="/">CP</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="/"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a class="nav-item nav-link active" href="/about.html">About</a>
+          <a class="nav-item nav-link" href="/work.html">My Work</a>
+          <a class="nav-item nav-link" href="/contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
     <div class="content-container container">
       <div class="content">
         <div class="row">
           <div class="col-lg-6">
             <h1>Charlotte Pringle</h1>
-            <h2>Front-end Developer, based in London, UK</h2>
+            <h2>Front-End Developer, based in London, UK</h2>
             <p class="mb-5">
               An endurance runner who thrives on solving problems
               efficiently—bringing passion for customer success, rapid learning,

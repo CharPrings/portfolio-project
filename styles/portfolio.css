@@ -10,6 +10,24 @@ body {
   font-family: "Nunito", sans-serif;
   background: var(--base-color);
 }
+
+.logo {
+    text-align:justify;
+    border: #5171a5 thick double;
+    padding: 4px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: all 100ms ease-in-out;
+  margin-left: 10px !important;
+}
+
+nav a:hover, nav li.active a {
+  color: var(--dark-color);
+}
+
 h1 {
   font-size: 96px;
   font-weight: bold;
@@ -81,7 +99,11 @@ img {
 }
 
 @media (max-width: 992px) {
-  h1 {
+  nav a {
+    font-size: 12px;
+  }
+  
+    h1 {
     font-size: 44px;
     line-height: 1.5;
   }
@@ -94,7 +116,7 @@ img {
     font-size: 44px;
   }
   .hero {
-    padding: 60px 20px;
+    padding: 0 20px;
   }
 
   .project-description {
