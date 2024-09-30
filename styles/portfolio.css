@@ -110,6 +110,7 @@ footer .contact-box {
   border: var(--primary-color) 1px solid;
   border-radius: 10px;
   padding: 20px 120px;
+  text-align: left;
 }
 
 footer .contact-box p {
